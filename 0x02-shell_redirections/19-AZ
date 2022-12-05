@@ -1,2 +1,2 @@
 #!/bin/bash
-tr AcZe
+tr A-Za-zC-Zc-z ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcbaE
