@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Find all files with a .gif extension in the current directory and all its subdirectories
+find . -type f -name '*.gif' |
+# Sort the files by byte values, ignoring case
+sort -b --ignore-case |
+# Remove the .gif extension from each file name
+while read file; do
+  basename "$file" ".gif"
+done
+# Print a new line at the end of the listing
+echo
